@@ -1,0 +1,26 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE",
+      "MshockRealXotto",
+      "MSX++DEAD_PEOPLE",
+      "MSXotto+"
+    ],
+    "tiles-new": [
+      {
+        "file": "tileset.png",
+        "tiles": [
+          {"id": "wooden_bucket", "fg": 1, "rotates": false}, 
+          {"id": "clay_bucket", "fg": 2, "rotates": false}, 
+          {"id": "f_stone_well", "fg": 3}
+        ],
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 0
+      }
+    ]
+  }
+]

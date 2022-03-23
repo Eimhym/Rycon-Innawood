@@ -1,0 +1,26 @@
+[
+  {
+    "type": "construction_group",
+    "id": "build_stone_well",
+    "name": "Build Stone Well"
+  },
+  {
+    "type": "construction",
+    "id": "constr_stone_well",
+    "group": "build_stone_well",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "fabrication", 4 ], [ "survival", 4 ] ],
+    "time": "120 m",
+    "qualities": [ 
+      [ { "id": "CUT", "level": 1 } ],
+      [ { "id": "HAMMER", "level": 2 } ] 
+    ],
+    "components": [ 
+      [ [ "rope_natural", 1, "LIST" ] ],
+      [ [ "clay_bucket", 1 ], [ "wooden_bucket", 1 ], [ "bucket", 1 ] ], 
+      [ [ "rock", 20 ] ] 
+    ],
+    "pre_terrain": "t_covered_well",
+    "post_terrain": "f_stone_well"
+  }
+]

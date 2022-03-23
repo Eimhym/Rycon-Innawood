@@ -1,0 +1,81 @@
+[
+  {
+    "id": "clay_bucket",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "clay bucket" },
+    "description": "Clay pot put inside wooden frame for cushion.",
+    "ascii_picture": "bucket",
+    "weight": "960 g",
+    "volume": "2500 ml",
+    "material": [ "wood", "clay" ],
+    "symbol": ")",
+    "color": "brown",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": true,
+        "watertight": true,
+        "open_container": true,
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2 kg"
+      }
+    ],
+    "qualities": [ [ "CONTAIN", 1 ] ]
+  },
+  {
+    "id": "wooden_bucket",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "wooden bucket" },
+    "description": "Watertight cylinder. Very durable though not suitable for headgear.",
+    "ascii_picture": "bucket",
+    "weight": "480 g",
+    "volume": "2100 ml",
+    "material": [ "wood" ],
+    "symbol": ")",
+    "color": "brown",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": true,
+        "watertight": true,
+        "open_container": true,
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2 kg"
+      }
+    ],
+    "qualities": [ [ "CONTAIN", 1 ] ]
+  },
+  {
+    "id": "stone_well_pseudo",
+    "type": "TOOL",
+    "name": { "str": "water well" },
+    "description": "pseudo water well.",
+    "weight": "8600 g",
+    "volume": "8 L",
+    "symbol": ";",
+    "color": "dark_gray",
+    "flags": [ "ALLOWS_REMOTE_USE" ]
+  },
+  {
+    "id": "f_stone_well",
+    "type": "furniture",
+    "name": "stone well",
+    "description": "Deep well collecting ground water.  Draw water from it with bucket attached to a rope.",
+    "symbol": "w",
+    "required_str": -1,
+    "move_cost_mod": -1,
+    "color": "light_gray",
+    "crafting_pseudo_item": "stone_well_pseudo",
+    "flags": [ "SEALED", "CONTAINER", "NOITEM", "EASY_DECONSTRUCT", "MINEABLE" ],
+    "deconstruct": { "items": [ { "item": "rock", "count": 20 } ] },
+    "bash": {
+      "str_min": 18,
+      "str_max": 50,
+      "sound": "crash!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "rock", "count": [ 10, 20 ] } ]
+    }
+  }
+]
