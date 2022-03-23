@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "rycon_innawood",
+    "name": "Rycon Innawood",
+    "authors": [ "Eimhym Dhnir" ],
+    "description": "Rycon Roleplays - Innawood series. Visit https://www.youtube.com/c/ryconroleplays",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+]
